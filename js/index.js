@@ -6,6 +6,7 @@ function init() {
       e.preventDefault();
       const input = e.target[0];
       const date = input.valueAsDate;
+      date.setHours(24);
       window.localStorage.setItem("timestamp", date.getTime());
       window.location = "/contador.html";
     });
