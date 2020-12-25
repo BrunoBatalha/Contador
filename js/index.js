@@ -61,6 +61,6 @@ function init() {
   btnReiniciar && btnReiniciar.addEventListener("click", voltarParaForm);
 
   const tempo = document.querySelector(".tempo");
-  tempo && gerenciaContador();
+  if (tempo) gerenciaContador();
 }
 init();
