@@ -130,3 +130,16 @@ h2 {
     font-size: 24px;
     color: #21EB00;
 }
+
+div>p.brilha {
+    animation: keybrilha .5s infinite alternate;
+}
+
+@keyframes keybrilha {
+    from {
+        color: #fff;
+    }
+    to {
+        color: red;
+    }
+}
